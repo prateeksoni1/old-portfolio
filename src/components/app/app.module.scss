@@ -1,0 +1,12 @@
+@import "../../index.scss";
+
+.app {
+  min-height: 100vh;
+  background-color: map-get($colors, background);
+  color: #fff;
+
+  .column {
+    margin: auto;
+    width: 60%;
+  }
+}
