@@ -1,0 +1,57 @@
+.nav {
+  position: fixed;
+  z-index: 1000;
+  background-color: #252525;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  font-family: "Roboto Condensed";
+
+  .container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    flex: 1;
+    margin: 10px 0px;
+  }
+
+  .navItem {
+    margin-left: 2rem;
+    font-size: 1.5rem;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+
+      &:hover {
+        color: #007acc;
+      }
+    }
+
+    .contact {
+      position: relative;
+      display: inline-block;
+    }
+
+    .links {
+      display: none;
+      position: absolute;
+      text-align: center;
+    }
+
+    &:hover .links {
+      display: block;
+    }
+  }
+
+  .icon {
+    margin-top: 1rem;
+    margin-right: 1rem;
+    display: inline-block;
+  }
+}
