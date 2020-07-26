@@ -35,17 +35,17 @@ const projects = [
   },
 ];
 
-const Work = () => {
-  const renderProject = React.Children.toArray(
-    projects.map((project, i) => (
-      <Project
-        name={project.name}
-        color={project.color}
-        description={project.description}
-      />
-    ))
-  );
+const renderProject = React.Children.toArray(
+  projects.map((project, i) => (
+    <Project
+      name={project.name}
+      color={project.color}
+      description={project.description}
+    />
+  ))
+);
 
+const Work = () => {
   return (
     <div className={classes.work}>
       <div className={classes.container}>

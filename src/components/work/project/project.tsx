@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from "react";
+import React, { FunctionComponent, useState } from "react";
 import classes from "./project.module.scss";
 
 interface projectProps {
@@ -8,9 +8,19 @@ interface projectProps {
 }
 
 const Project: FunctionComponent<projectProps> = (props) => {
+  const [showDescription, setShowDescription] = useState(false);
+
+  const handleClick = () => {
+    setShowDescription(!showDescription);
+  };
+
   return (
-    <div className={classes.gridItem} style={{ backgroundColor: props.color }}>
-      {props.name}
+    <div
+      className={classes.gridItem}
+      style={{ backgroundColor: props.color }}
+      onClick={handleClick}
+    >
+      {showDescription ? props.description : props.name}
     </div>
   );
 };
