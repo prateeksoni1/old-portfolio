@@ -8,7 +8,8 @@ const Hero = () => {
       <div className={classes.darken}>
         <div className={classes.heroText}>
           <Typist>
-            <span className={classes.hello}>Hello!</span> <br />
+            <span className={classes.hello}>Hello! I'm Prateek Soni and</span>{" "}
+            <br />
             <br />
             <span className={classes.main}>I'm a full stack web developer</span>
           </Typist>
