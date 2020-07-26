@@ -1,13 +1,17 @@
 import React from "react";
 import classes from "./hero.module.scss";
+import Typist from "react-typist";
 
 const Hero = () => {
   return (
     <div className={classes.container}>
       <div className={classes.darken}>
         <div className={classes.heroText}>
-          <h2>Hello!</h2>
-          <h1>I'm a full stack web developer</h1>
+          <Typist>
+            <span className={classes.hello}>Hello!</span> <br />
+            <br />
+            <span className={classes.main}>I'm a full stack web developer</span>
+          </Typist>
           <div className={classes.buttonContainer}>
             <a href="#work" className={classes.primary}>
               My work

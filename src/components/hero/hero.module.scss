@@ -17,15 +17,27 @@ $bgUrl: "../../assets/hero-bg.jpg";
     justify-content: center;
 
     .heroText {
+      padding: 2rem;
       font-family: Inconsolata;
-      font-size: 2rem;
+      font-size: 1rem;
+      text-align: center;
 
-      h1 {
-        overflow: hidden;
-        border-right: 0.15em solid orange;
-        white-space: nowrap;
-        animation: typing 3.5s steps(40, end),
-          blink-caret 0.75s step-end infinite;
+      .hello {
+        font-size: 3rem;
+      }
+
+      .main {
+        font-size: 5rem;
+      }
+
+      @media screen and (max-width: 768px) {
+        .hello {
+          font-size: 2rem;
+        }
+
+        .main {
+          font-size: 3rem;
+        }
       }
 
       .buttonContainer {
@@ -38,6 +50,10 @@ $bgUrl: "../../assets/hero-bg.jpg";
           color: map-get($colors, color);
           margin-right: 2rem;
 
+          @media screen and (max-width: 768px) {
+            font-size: 1rem;
+          }
+
           &:hover {
             color: map-get($colors, primary);
           }
@@ -46,29 +62,12 @@ $bgUrl: "../../assets/hero-bg.jpg";
           color: #000;
           padding: 1rem 3rem;
           background-color: map-get($colors, primary);
+
+          @media screen and (max-width: 768px) {
+            padding: 0.7rem 2rem;
+          }
         }
       }
     }
-  }
-}
-
-/* The typing effect */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: map-get($colors, primary);
   }
 }
