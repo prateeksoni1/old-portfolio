@@ -4,7 +4,7 @@ import Typist from "react-typist";
 
 const Hero = () => {
   return (
-    <div className={classes.container}>
+    <div id="hero" className={classes.container}>
       <div className={classes.darken}>
         <div className={classes.heroText}>
           <Typist>

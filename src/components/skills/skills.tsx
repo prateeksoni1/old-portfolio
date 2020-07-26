@@ -19,7 +19,7 @@ const skills = {
 
 const Skills: FunctionComponent = () => {
   return (
-    <div className={classes.skills}>
+    <div id="skills" className={classes.skills}>
       <div className={classes.container}>
         <h1 className={classes.head}>my skills</h1>
         <div className={classes.pillTitle}>Frontend</div>

@@ -47,7 +47,7 @@ const renderProject = React.Children.toArray(
 
 const Work = () => {
   return (
-    <div className={classes.work}>
+    <div id="work" className={classes.work}>
       <div className={classes.container}>
         <h1 className={classes.head}>some of my personal projects</h1>
         <div className={classes.grid}>{renderProject}</div>
