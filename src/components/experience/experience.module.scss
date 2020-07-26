@@ -1,0 +1,36 @@
+.experience {
+  margin-top: 64px;
+  margin: auto;
+  min-height: 100vh;
+  //   margin-bottom: 2rem;
+  align-items: center;
+  //   background-image: url(${require("../assets/shapes.png")});
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .container {
+    width: 100%;
+  }
+
+  .head {
+    font-size: 2rem;
+    font-family: "Open Sans";
+    font-weight: 100;
+  }
+
+  .grid {
+    display: grid;
+    margin: auto;
+    align-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+
+    @media screen and (max-width: 768px) {
+      grid-gap: 1rem;
+      grid-template-columns: auto;
+    }
+  }
+}

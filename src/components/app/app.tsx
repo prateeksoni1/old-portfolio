@@ -3,6 +3,7 @@ import classes from "./app.module.scss";
 import Hero from "../hero/hero";
 import Navbar from "../navbar/navbar";
 import Work from "../work/work";
+import Experience from "../experience/experience";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Hero />
       <div className={classes.column}>
         <Work />
+        <Experience />
       </div>
     </div>
   );
