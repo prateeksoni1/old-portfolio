@@ -4,6 +4,7 @@ import Hero from "../hero/hero";
 import Navbar from "../navbar/navbar";
 import Work from "../work/work";
 import Experience from "../experience/experience";
+import Skills from "../skills/skills";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <div className={classes.column}>
         <Work />
         <Experience />
+        <Skills />
       </div>
     </div>
   );
