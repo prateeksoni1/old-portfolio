@@ -6,32 +6,38 @@ const projects = [
   {
     name: "Matter",
     color: "#2980B9",
-    description: "",
+    description:
+      "A Project Management Web App, with fully customizable roles and permissions.",
   },
   {
     name: "Bloggr",
     color: "#16A085",
-    description: "",
+    description: "A blogging website to post blogs with a rich text editor",
+  },
+  {
+    name: "Snake",
+    color: "#487EB0",
+    description: "The Classic Snake Game with Vanilla JS",
   },
   {
     name: "Keep",
     color: "#487EB0",
-    description: "",
+    description: "A To-Do List Manager with Authentication",
   },
   {
     name: "Drag Jump",
     color: "#1289A7",
-    description: "",
+    description: "A Flappy Bird like Game for Android made with Unity",
   },
   {
     name: "Line Strike",
     color: "#487EB0",
-    description: "",
+    description: "A 2d game with Fruit Ninja like controls",
   },
   {
     name: "More",
     color: "#006266",
-    description: "",
+    description: "More such projects available at my github",
   },
 ];
 
