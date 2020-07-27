@@ -35,22 +35,23 @@ const projects = [
   },
 ];
 
-const renderProject = React.Children.toArray(
-  projects.map((project, i) => (
-    <Project
-      name={project.name}
-      color={project.color}
-      description={project.description}
-    />
-  ))
-);
+const renderProject = () =>
+  React.Children.toArray(
+    projects.map((project, i) => (
+      <Project
+        name={project.name}
+        color={project.color}
+        description={project.description}
+      />
+    ))
+  );
 
 const Work = () => {
   return (
     <div id="work" className={classes.work}>
       <div className={classes.container}>
         <h1 className={classes.head}>some of my personal projects</h1>
-        <div className={classes.grid}>{renderProject}</div>
+        <div className={classes.grid}>{renderProject()}</div>
       </div>
     </div>
   );
