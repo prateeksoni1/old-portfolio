@@ -1,3 +1,5 @@
+@import "../../index.scss";
+
 .skills {
   margin-bottom: 0;
   min-height: 100vh;
@@ -10,8 +12,6 @@
 
     .head {
       font-weight: 100;
-      font-family: "Open Sans";
-      margin-bottom: 2rem;
     }
 
     .pillTitle {
@@ -28,7 +28,13 @@
         margin-bottom: 1rem;
         box-sizing: border-box;
         font-size: 1.5rem;
-        background-color: #525252;
+        background: linear-gradient(
+          90deg,
+          rgba(45, 159, 151, 1) 0%,
+          rgba(102, 252, 241, 1) 35%,
+          rgba(0, 212, 255, 1) 100%
+        );
+        color: #000;
         padding: 0.5rem 2rem;
         border-radius: 100px;
 
